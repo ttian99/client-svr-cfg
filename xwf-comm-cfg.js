@@ -1,4 +1,4 @@
-var xwfCommCfg = function (cfg) {
+function xwfCommCfg(cfg) {
   // 服务器地址
   if (cfg.isDev) {
     cfg.svrUrl = 'http://localhost:8010/';
@@ -10,7 +10,7 @@ var xwfCommCfg = function (cfg) {
   // var svData = require('./xwf-sv-cfg.js');
   // svData(cfg);
   // console.log("cfg.sv.lenght = " + cfg.svData.lenght);
-};
+}
 
 if (typeof(module) !== 'undefined') {
   module.exports = xwfCommCfg;

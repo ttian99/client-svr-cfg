@@ -5,7 +5,7 @@
  *     code > 1000: 具体项目相关业务逻辑错误
  *   code < 0: 系统内部错误
  */
-var rstCode = function (cfg) {
+function rstCode(cfg) {
   cfg.rst = {
     SUCC: { code: 0, msg: 'succ' },
     EDB: { code: -1, msg: 'handle db error' },
@@ -21,7 +21,7 @@ var rstCode = function (cfg) {
     NOT_MATCH: { code: 1004, msg: 'not match' },  // 没有匹配上
     NOT_EXIST: { code: 1005, msg: 'not exist' }  // 不存在
   };
-};
+}
 
 if (typeof(module) !== 'undefined') {
   module.exports = rstCode;

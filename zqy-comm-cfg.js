@@ -1,4 +1,4 @@
-var zqyCommCfg = function (cfg) {
+function zqyCommCfg(cfg) {
   // 服务器地址
   if (cfg.isDev) {
     cfg.svrUrl = 'http://localhost:8010/';
